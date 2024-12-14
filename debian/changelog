@@ -1,0 +1,16 @@
+ros-humble-game-controller-spl-interfaces (2.2.0-1jammy) jammy; urgency=high
+
+  * Updates for RCGCD16 (#92 <https://github.com/ros-sports/gc_spl/issues/92>)
+  * Fix typo (#89 <https://github.com/ros-sports/gc_spl/issues/89>)
+  * Contributors: Kenji Brameld, ijnek
+
+ -- ijnek <kenjibrameld@gmail.com>  Sat, 07 Dec 2024 16:00:00 -0000
+
+ros-humble-game-controller-spl-interfaces (2.1.0-1jammy) jammy; urgency=high
+
+  * Add package (#79 <https://github.com/ros-sports/gc_spl/issues/79>)
+  * Contributors: Florian Vahl, Kenji Brameld
+
+ -- ijnek <kenjibrameld@gmail.com>  Fri, 19 Jan 2024 16:00:00 -0000
+
+
