@@ -1,0 +1,12 @@
+Source: ros-humble-rcgcd-spl-14-conversion
+Section: misc
+Priority: optional
+Maintainer: ijnek <kenjibrameld@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-humble-ament-copyright <!nocheck>, ros-humble-ament-flake8 <!nocheck>, ros-humble-ament-pep257 <!nocheck>, ros-humble-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-rcgcd-spl-14-conversion
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-construct, ros-humble-rcgcd-spl-14, ros-humble-ros-workspace
+Description: Converts RoboCup SPL GameController Data V14 between ROS msg and UDP raw bytes
