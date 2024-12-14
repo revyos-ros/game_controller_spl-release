@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>gc_spl</name>
-  <version>4.0.1</version>
+  <version>2.2.0</version>
   <description>GameController-Robot communication in RoboCup SPL</description>
   <maintainer email="kenjibrameld@gmail.com">ijnek</maintainer>
   <license>Apache License 2.0</license>
@@ -18,8 +18,5 @@
 
   <export>
     <build_type>ament_python</build_type>
-    <deprecated>
-      Please use game_controller_spl. gc_spl is deprecated as of J-turtle, and will be removed in K-turtle.
-    </deprecated>
   </export>
 </package>
