@@ -14,12 +14,12 @@
 
 from construct import Container
 
-from game_controller_spl.rcgcd_14.conversion import rcgcd_data_to_msg
+from game_controller_spl.rcgcd_16.conversion import rcgcd_data_to_msg
 
-from game_controller_spl.rcgcd_14.robocup_game_control_data import RoboCupGameControlData
-from game_controller_spl_interfaces.msg import RCGCD14 as RCGCD
-from game_controller_spl_interfaces.msg import RobotInfo14 as RobotInfo
-from game_controller_spl_interfaces.msg import TeamInfo14 as TeamInfo
+from game_controller_spl.rcgcd_16.robocup_game_control_data import RoboCupGameControlData
+from game_controller_spl_interfaces.msg import RCGCD16 as RCGCD
+from game_controller_spl_interfaces.msg import RobotInfo16 as RobotInfo
+from game_controller_spl_interfaces.msg import TeamInfo16 as TeamInfo
 
 
 def test_rcgcd_data_to_msg():
@@ -29,7 +29,7 @@ def test_rcgcd_data_to_msg():
             packetNumber=1,
             playersPerTeam=5,
             competitionPhase=RCGCD.COMPETITION_PHASE_PLAYOFF,
-            competitionType=RCGCD.COMPETITION_TYPE_CHALLENGE_SHIELD,
+            competitionType=RCGCD.COMPETITION_TYPE_SHARED_AUTONOMY,
             gamePhase=RCGCD.GAME_PHASE_PENALTYSHOOT,
             state=RCGCD.STATE_READY,
             setPlay=RCGCD.SET_PLAY_GOAL_KICK,
@@ -40,7 +40,9 @@ def test_rcgcd_data_to_msg():
             teams=[
                 Container(
                     teamNumber=1,
-                    teamColour=TeamInfo.TEAM_RED,
+                    fieldPlayerColour=TeamInfo.TEAM_RED,
+                    goalkeeperColour=TeamInfo.TEAM_RED,
+                    goalkeeper=1,
                     score=1,
                     penaltyShot=2,
                     singleShots=3,
@@ -59,11 +61,39 @@ def test_rcgcd_data_to_msg():
                         Container(penalty=RobotInfo.PENALTY_NONE,
                                   secsTillUnpenalised=0),
                         Container(penalty=RobotInfo.PENALTY_SPL_PLAYER_PUSHING,
-                                  secsTillUnpenalised=2)
+                                  secsTillUnpenalised=2),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
                     ]),
                 Container(
                     teamNumber=2,
-                    teamColour=TeamInfo.TEAM_YELLOW,
+                    fieldPlayerColour=TeamInfo.TEAM_YELLOW,
+                    goalkeeperColour=TeamInfo.TEAM_YELLOW,
+                    goalkeeper=1,
                     score=4,
                     penaltyShot=5,
                     singleShots=6,
@@ -82,7 +112,33 @@ def test_rcgcd_data_to_msg():
                         Container(penalty=RobotInfo.PENALTY_NONE,
                                   secsTillUnpenalised=0),
                         Container(penalty=RobotInfo.PENALTY_SPL_PLAYER_PUSHING,
-                                  secsTillUnpenalised=12)
+                                  secsTillUnpenalised=12),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
+                        Container(penalty=RobotInfo.PENALTY_NONE,
+                                  secsTillUnpenalised=0),
                     ])
             ]
         )
@@ -92,7 +148,7 @@ def test_rcgcd_data_to_msg():
     assert msg.packet_number == 1
     assert msg.players_per_team == 5
     assert msg.competition_phase == RCGCD.COMPETITION_PHASE_PLAYOFF
-    assert msg.competition_type == RCGCD.COMPETITION_TYPE_CHALLENGE_SHIELD
+    assert msg.competition_type == RCGCD.COMPETITION_TYPE_SHARED_AUTONOMY
     assert msg.game_phase == RCGCD.GAME_PHASE_PENALTYSHOOT
     assert msg.state == RCGCD.STATE_READY
     assert msg.set_play == RCGCD.SET_PLAY_GOAL_KICK
@@ -101,7 +157,9 @@ def test_rcgcd_data_to_msg():
     assert msg.secs_remaining == 10
     assert msg.secondary_time == 2
     assert msg.teams[0].team_number == 1
-    assert msg.teams[0].team_colour == TeamInfo.TEAM_RED
+    assert msg.teams[0].field_player_colour == TeamInfo.TEAM_RED
+    assert msg.teams[0].goalkeeper_colour == TeamInfo.TEAM_RED
+    assert msg.teams[0].goalkeeper == 1
     assert msg.teams[0].score == 1
     assert msg.teams[0].penalty_shot == 2
     assert msg.teams[0].single_shots == 3
@@ -111,7 +169,9 @@ def test_rcgcd_data_to_msg():
     assert msg.teams[0].players[6].penalty == RobotInfo.PENALTY_SPL_PLAYER_PUSHING
     assert msg.teams[0].players[6].secs_till_unpenalised == 2
     assert msg.teams[1].team_number == 2
-    assert msg.teams[1].team_colour == TeamInfo.TEAM_YELLOW
+    assert msg.teams[1].field_player_colour == TeamInfo.TEAM_YELLOW
+    assert msg.teams[1].goalkeeper_colour == TeamInfo.TEAM_YELLOW
+    assert msg.teams[1].goalkeeper == 1
     assert msg.teams[1].score == 4
     assert msg.teams[1].penalty_shot == 5
     assert msg.teams[1].single_shots == 6
