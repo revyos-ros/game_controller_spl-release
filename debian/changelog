@@ -1,8 +1,0 @@
-ros-humble-game-controller-spl (2.1.0-1jammy) jammy; urgency=high
-
-  * Add package (#79 <https://github.com/ros-sports/gc_spl/issues/79>)
-  * Contributors: Florian Vahl, Kenji Brameld
-
- -- ijnek <kenjibrameld@gmail.com>  Sat, 20 Jan 2024 00:00:00 -0000
-
-
