@@ -1,3 +1,35 @@
+## game_controller_spl (jazzy) - 4.1.0-1
+
+The packages in the `game_controller_spl` repository were released into the `jazzy` distro by running `/tmp/venv/bin/bloom-release -r jazzy game_controller_spl --override-release-repository-push-url git@github.com:revyos-ros/game_controller_spl-release.git --edit` on `Thu, 19 Dec 2024 04:52:50 -0000`
+
+These packages were released:
+- `game_controller_spl`
+- `game_controller_spl_interfaces`
+- `gc_spl`
+- `gc_spl_2022`
+- `gc_spl_interfaces`
+- `rcgcd_spl_14`
+- `rcgcd_spl_14_conversion`
+- `rcgcrd_spl_4`
+- `rcgcrd_spl_4_conversion`
+
+Version of package(s) in repository `game_controller_spl`:
+
+- upstream repository: https://github.com/ros-sports/game_controller_spl.git
+- release repository: https://github.com/revyos-ros/game_controller_spl-release.git
+- rosdistro version: `4.1.0-1`
+- old version: `4.0.1-1`
+- new version: `4.1.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## game_controller_spl (humble) - 2.2.0-2
 
 The packages in the `game_controller_spl` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r humble game_controller_spl --override-release-repository-push-url git@github.com:revyos-ros/game_controller_spl-release.git` on `Sat, 14 Dec 2024 07:15:33 -0000`
