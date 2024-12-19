@@ -1,0 +1,29 @@
+ros-jazzy-game-controller-spl (4.1.0-1bookworm) bookworm; urgency=high
+
+  * Updates for RCGCD16 (#92 <https://github.com/ros-sports/gc_spl/issues/92>)
+  * Clean up tests that were re-defining constants that were defined in the interfaces (#93 <https://github.com/ros-sports/gc_spl/issues/93>)
+  * Contributors: Kenji Brameld, ijnek
+
+ -- ijnek <kenjibrameld@gmail.com>  Sun, 08 Dec 2024 00:00:00 -0000
+
+ros-jazzy-game-controller-spl (4.0.1-1bookworm) bookworm; urgency=high
+
+  * fix print error
+  * Contributors: Kenji Brameld
+
+ -- ijnek <kenjibrameld@gmail.com>  Sun, 14 Apr 2024 00:00:00 -0000
+
+ros-jazzy-game-controller-spl (4.0.0-1bookworm) bookworm; urgency=high
+
+  * Add package (#79 <https://github.com/ros-sports/gc_spl/issues/79>)
+  * Contributors: Florian Vahl, Kenji Brameld
+
+ -- ijnek <kenjibrameld@gmail.com>  Sat, 20 Jan 2024 00:00:00 -0000
+
+ros-jazzy-game-controller-spl (3.0.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- ijnek <kenjibrameld@gmail.com>  Wed, 15 Jun 2022 00:00:00 -0000
+
+
