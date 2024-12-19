@@ -1,4 +1,4 @@
-# Copyright 2022 Kenji Brameld
+# Copyright 2024 Kenji Brameld
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ from construct import Array, Byte, Const, Int16sl, Int16ul, Struct
 GAMECONTROLLER_DATA_PORT = 3838
 
 GAMECONTROLLER_STRUCT_HEADER = b'RGme'
-GAMECONTROLLER_STRUCT_VERSION = 15
+GAMECONTROLLER_STRUCT_VERSION = 16
 
 MAX_NUM_PLAYERS = 20
 
