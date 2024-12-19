@@ -1,0 +1,12 @@
+Source: ros-jazzy-rcgcd-spl-14-conversion
+Section: misc
+Priority: optional
+Maintainer: ijnek <kenjibrameld@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-jazzy-ament-copyright <!nocheck>, ros-jazzy-ament-flake8 <!nocheck>, ros-jazzy-ament-pep257 <!nocheck>, ros-jazzy-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-rcgcd-spl-14-conversion
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-construct, ros-jazzy-rcgcd-spl-14, ros-jazzy-ros-workspace
+Description: Converts RoboCup SPL GameController Data V14 between ROS msg and UDP raw bytes
