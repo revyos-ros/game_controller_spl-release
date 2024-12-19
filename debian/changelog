@@ -1,0 +1,27 @@
+ros-jazzy-gc-spl-2022 (4.1.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- ijnek <kenjibrameld@gmail.com>  Sun, 08 Dec 2024 00:00:00 -0000
+
+ros-jazzy-gc-spl-2022 (4.0.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- ijnek <kenjibrameld@gmail.com>  Sun, 14 Apr 2024 00:00:00 -0000
+
+ros-jazzy-gc-spl-2022 (4.0.0-1bookworm) bookworm; urgency=high
+
+  * Deprecate package(#81 <https://github.com/ros-sports/gc_spl/issues/81>)
+  * Contributors: Kenji Brameld
+
+ -- ijnek <kenjibrameld@gmail.com>  Sat, 20 Jan 2024 00:00:00 -0000
+
+ros-jazzy-gc-spl-2022 (3.0.0-1bookworm) bookworm; urgency=high
+
+  * Initial commit
+  * Contributors: Kenji Brameld
+
+ -- ijnek <kenjibrameld@gmail.com>  Wed, 15 Jun 2022 00:00:00 -0000
+
+
