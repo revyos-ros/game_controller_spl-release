@@ -2,15 +2,20 @@
 Changelog for package rcgcd_spl_14
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.2.0 (2024-12-08)
+4.1.0 (2024-12-08)
 ------------------
-* Fix typo (`#89 <https://github.com/ros-sports/gc_spl/issues/89>`_)
-* Contributors: Kenji Brameld, ijnek
+* Fix typo (`#88 <https://github.com/ros-sports/gc_spl/issues/88>`_)
+* Contributors: Kenji Brameld
 
-2.1.0 (2024-01-20)
+4.0.1 (2024-04-14)
 ------------------
 
-2.0.0 (2022-06-15)
+4.0.0 (2024-01-20)
+------------------
+* Deprecate package(`#81 <https://github.com/ros-sports/gc_spl/issues/81>`_)
+* Contributors: Kenji Brameld
+
+3.0.0 (2022-06-15)
 ------------------
 * Initial commit
 * Contributors: Kenji Brameld
